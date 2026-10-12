@@ -1,0 +1,56 @@
+# Build output (CMake / Conan), at any depth
+build/
+build-*/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+CMakeUserPresets.json
+conan_toolchain.cmake
+conanbuildinfo.*
+conaninfo.txt
+graph_info.json
+generators/
+
+# Compiled artifacts
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.exe
+/test_hid
+/test_desktop_shortcuts
+
+# Generated from *.in templates
+/gamepad-mapper.pc
+
+# Logs and local scan output
+*.log
+
+# Downloaded installers / packages / keys (not source)
+*.deb
+*.rpm
+*.AppImage
+*.gpg
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Local tooling and secrets
+.claude/settings.local.json
+.env
+.env.*

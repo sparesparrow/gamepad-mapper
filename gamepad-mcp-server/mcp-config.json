@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "gamepad-control": {
+      "command": "gamepad-mcp-server-app",
+      "args": [],
+      "env": {
+        "GAMEPAD_MCP_HOST": "localhost",
+        "GAMEPAD_MCP_PORT": "3001",
+        "GAMEPAD_LOG_LEVEL": "info"
+      }
+    }
+  },
+  "gamepad": {
+    "default_mapping": "gaming",
+    "auto_connect_devices": true,
+    "enable_bluetooth": true,
+    "enable_voice_alerts": false,
+    "scan_interval_seconds": 30,
+    "cors_origins": ["http://localhost:3000"]
+  },
+  "integrations": {
+    "gamepad_core_enabled": true,
+    "bluetooth_enabled": true,
+    "audio_enabled": true,
+    "config_enabled": true,
+    "kde_enabled": false
+  },
+  "resources": {
+    "devices_uri": "gamepad://devices",
+    "mappings_uri": "gamepad://mappings",
+    "status_uri": "gamepad://status",
+    "active_mapping_uri": "gamepad://active-mapping"
+  },
+  "prompts": {
+    "setup_enabled": true,
+    "gaming_optimization_enabled": true,
+    "accessibility_enabled": true
+  }
+}
